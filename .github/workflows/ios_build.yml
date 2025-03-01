@@ -19,6 +19,12 @@ jobs:
           flutter-version: "3.19.3"  # Set to latest stable version (replace with latest if needed)
           cache: true  # Enable cache for faster builds
 
+      - name: Verify Flutter & Dart Versions
+        run: flutter --version  # Debugging step
+        
+      - name: Ensure Correct Dart SDK Version
+        run: flutter doctor  # Ensures Dart SDK is correct
+
       - name: Install Dependencies
         run: flutter pub get
 
