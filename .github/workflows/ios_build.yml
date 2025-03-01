@@ -16,7 +16,7 @@ jobs:
       - name: Set Up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: "3.19.3"  # Set to latest stable version (replace with latest if needed)
+          flutter-version: "3.29.0"  # Set to latest stable version (replace with latest if needed)
           cache: true  # Enable cache for faster builds
 
       - name: Verify Flutter & Dart Versions
